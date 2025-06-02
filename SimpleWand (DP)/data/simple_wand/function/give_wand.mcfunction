@@ -1,0 +1,1 @@
+give @s warped_fungus_on_a_stick[custom_data={simple_wand:1b},custom_name="Simple Wand",enchantment_glint_override=true,unbreakable={}] 1
