@@ -15,7 +15,7 @@ function simple_wand:spell_step_sound
 # Edited from https://www.youtube.com/watch?v=kKS3sF0X4Is
 # Can either target only a list of entities with 'type=<file>'
 # or ignore a list of entities with 'type=!<file>'
-execute positioned ~-0.15 ~-0.15 ~-0.15 as @e[dx=0,tag=!simple_wand_spell,limit=1,type=!#simple_wand:specific_target_example] positioned ~-0.7 ~-0.7 ~-0.7 if entity @s[dx=0] run function simple_wand:spell_collide_entity
+execute positioned ~-0.15 ~-0.15 ~-0.15 as @e[dx=0,tag=!simple_wand_spell,limit=1,type=!#simple_wand:specific_target_example] positioned ~-0.7 ~-0.7 ~-0.7 if entity @s[dx=0] unless score @s simple_wand.player.immunity matches 0.. run function simple_wand:spell_collide_entity
 
 # Block collision detection
 # Can either pass through a list of blocks with 'unless block x y z <file>'

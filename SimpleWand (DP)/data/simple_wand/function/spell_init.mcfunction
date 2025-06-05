@@ -2,6 +2,12 @@
 # Description: Initializes the spell
 # Callers: simple_wand:tick; by the player
 
+# Give immunity to player
+scoreboard players set @s simple_wand.player.immunity 4
+
+# Set delay to prevent spamming
+scoreboard players set @s simple_wand.player.delay 10
+
 # Summon the projectile
 summon area_effect_cloud ~ ~ ~ {Particle:{type:"dust",color:[0.000,0.000,0.000],scale:0.01},NoGravity:1b,Radius:0f,RadiusPerTick:0f,RadiusOnUse:0f,Duration:72000,Tags:["simple_wand_spell"]}
 
