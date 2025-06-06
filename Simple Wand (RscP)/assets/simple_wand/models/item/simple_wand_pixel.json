@@ -1,5 +1,5 @@
 {
-    "parent": "item/generated",
+    "parent": "item/handheld",
     "textures": {
 		"layer0": "simple_wand:item/simple_wand_pixel_texture"
 	}
