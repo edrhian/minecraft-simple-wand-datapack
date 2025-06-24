@@ -1,0 +1,6 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "simple_wand:item/simple_wand_pixel"
+    }
+}
